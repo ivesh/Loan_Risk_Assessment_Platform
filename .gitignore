@@ -209,3 +209,5 @@ __marimo__/
 notebook/data_feature_engineered.csv 
 
 notebook/test_predictions_for_review.csv
+
+data/raw/emi_prediction_dataset.csv
