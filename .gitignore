@@ -206,10 +206,12 @@ marimo/_static/
 marimo/_lsp/
 __marimo__/
 
+data/raw/emi_prediction_dataset.csv
+
+notebook/data_cleaned.csv
+
 notebook/data_feature_engineered.csv 
 
 notebook/test_predictions_for_review.csv
 
-notebook/data_cleaned.csv
 
-data/raw/emi_prediction_dataset.csv
