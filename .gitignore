@@ -214,4 +214,6 @@ notebook/data_feature_engineered.csv
 
 notebook/test_predictions_for_review.csv
 
+artifacts/*
+
 

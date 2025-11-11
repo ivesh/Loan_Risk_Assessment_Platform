@@ -1,0 +1,2 @@
+from src.mlProject import logger
+logger.info("Welcome to custom logging, we are testing using test.py and the custom logging has been setup under the main constructur file, exception has been setup using box exception under common.py under utils. And, configbox is basically used to access the keyy/value pair of the dictionary in a specific format ")
