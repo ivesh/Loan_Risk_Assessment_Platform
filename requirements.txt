@@ -9,5 +9,6 @@ python-box
 pyYAML
 tqdm
 ensure
+-e . 
 
 
