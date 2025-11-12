@@ -1,1 +1,34 @@
-key: val
+COLUMNS:
+  age:                        object
+  gender:                     object
+  marital_status:             object
+  education:                  object
+  monthly_salary:             object
+  employment_type:            object
+  years_of_employment:       float64
+  company_type:               object
+  house_type:                 object
+  monthly_rent:              float64
+  family_size:                 int64
+  dependents:                  int64
+  school_fees:               float64
+  college_fees:              float64
+  travel_expenses:           float64
+  groceries_utilities:       float64
+  other_monthly_expenses:    float64
+  existing_loans:             object
+  current_emi_amount:        float64
+  credit_score:              float64
+  bank_balance:               object
+  emergency_fund:            float64
+  emi_scenario:               object
+  requested_amount:          float64
+  requested_tenure:            int64
+  emi_eligibility:            object
+  max_monthly_emi:           float64
+
+
+TARGET_COLUMNS:
+  classification_target: emi_eligibility
+  regression_target: max_monthly_emi
+  
