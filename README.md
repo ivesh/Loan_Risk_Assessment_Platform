@@ -6,14 +6,14 @@
 
 # Workflow Steps for ml project(version 1):
 1. Update the config.yaml -> Update the configuration for data ingestion & validation, eda, feature engineering and model training
-2. Update the schema.yaml -> During data ingestion not required keep dummy key:value
-3. Update the params.yaml -> During data ingestion not required keep dummy key:value
+2. Update the schema.yaml -> During data ingestion not required keep dummy key:value, during data validation it is required.
+3. Update the params.yaml -> During data ingestion not required keep dummy key:value, during model training this is required.
 4. Update the entity -> Return type of the function is first defined under research dataingestion.
 4. Update the constant ->  Will contain the path of the constant yaml paths
-5. Update the configuration manager in src config
-6. Update the components
-7. Update the pipeline
-8. Update the main.py
+5. Update the configuration manager in src config -> It will read the path of yaml file config, param and schema and create directory under __init__ constructor and has one more function get data ingestion fuction whose returrn type was earlier defined as an entity using dataclass library.
+6. Update the components -> It will contain the data ingestion component that will contain the class of Data ingestion under which __init__ contains the Dataingestion configration (paths), and functions responsible for downloading file, and extracting zip file, request library here is used for downloading the data.
+7. Update the pipeline -> Data Ingestion pipeline initializes the config object with configuration manager class, post that data ingestion component class is called within which methods of download_file and extract_zip_file is called. 
+8. Update the main.py -> Import logger and pipeline to test data ingestion
 9. Update the app.py
 
 # MLOPS:
