@@ -19,7 +19,12 @@ data_validation:
 
 data_transformation:
   root_dir: artifacts/data_transformation
-  data_path: artifacts/data_ingestion/winequality-red.csv
+  read_data_path: artifacts/data_validation/data_cleaned.csv
+  eda_report_path: artifacts/data_transformation/eda_report
+  fe_file_path: artifacts/data_transformation/data_feature_engineered.csv
+  transformed_train_data:  artifacts/data_transformation/train.csv
+  transformed_test_data: artifacts/data_transformation/test.csv
+
 
 
 
